@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Linq;
+using System.Xml.Linq;
 
 namespace Libreria_lolli_casanova
 {
@@ -23,6 +25,12 @@ namespace Libreria_lolli_casanova
         public MainWindow()
         {
             InitializeComponent();
+
+            IEnumerable<string> libro = from Biblioteca in XDocument.Load(@"../../libri.XML")
+                                                                             .Element("Students").Elements("Studente")
+                                        where (int)Biblioteca.Element("codice_scheda") == (int)Biblioteca.Element("codice_scheda")
+                                        orderby (int)Biblioteca.Element("codice_scheda") descending
+                                        select Biblioteca.Element("codice_scheda").Value;
         }
     }
 }
