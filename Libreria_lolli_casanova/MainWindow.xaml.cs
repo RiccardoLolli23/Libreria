@@ -27,8 +27,7 @@ namespace Libreria_lolli_casanova
             InitializeComponent();
 
             IEnumerable<string> libro = from Biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                             .Element("Students").Elements("Studente")
-                                        where (int)Biblioteca.Element("codice_scheda") == (int)Biblioteca.Element("codice_scheda")
+                                                                             .Element("Students").Elements("Studente")                                        
                                         orderby (int)Biblioteca.Element("codice_scheda") descending
                                         select Biblioteca.Element("codice_scheda").Value;
         }
