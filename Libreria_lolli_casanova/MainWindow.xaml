@@ -5,15 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Libreria_lolli_casanova"
         mc:Ignorable="d"
-        Title="Libreria" Height="404.815" Width="594.365" Background="#FFF70707">
+        Title="Libreria" Height="393.189" Width="594.365" Background="#FFF70707">
     <Window.Foreground>
         <ImageBrush/>
     </Window.Foreground>
     <Grid Margin="0,0,2,2">
         <Grid.Background>
-            <ImageBrush/>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFDEABAB" Offset="0.103"/>
+                <GradientStop Color="#FFDC2828" Offset="0.93"/>
+            </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="btn_crea" Content="Crea" Margin="220,0,244,149" VerticalAlignment="Bottom" Height="65" Click="btn_crea_Click"/>
+        <TextBox x:Name="txt_aut_da_cercare" HorizontalAlignment="Left" Height="23" Margin="10,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <Label Content="Inserire il nome dell'autore da cercare:" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_cerca_aut" Content="Cerca autore" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="212" IsEnabled="False" Click="btn_cerca_aut_Click"/>
+        <Label Content="Inserire il titolo di un libro:" HorizontalAlignment="Left" Margin="348,38,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.139"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txt_libro_da_cerc" HorizontalAlignment="Left" Height="23" Margin="346,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <Button x:Name="btn_copie_libro" Content="Cerca libro" HorizontalAlignment="Left" Margin="346,92,0,0" VerticalAlignment="Top" Width="212" IsEnabled="False" Click="btn_copie_libro_Click"/>
+        <ListBox x:Name="lbl_libri_aut" HorizontalAlignment="Left" Height="88" Margin="10,102,0,0" VerticalAlignment="Top" Width="212"/>
+        <Label Content="Inserire il genere del libro:" HorizontalAlignment="Left" Margin="346,130,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_genere" HorizontalAlignment="Left" Height="23" Margin="346,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <Button x:Name="btn_cerca_gen_libro" Content="Cerca libro per genere" HorizontalAlignment="Left" Margin="346,185,0,0" VerticalAlignment="Top" Width="212" IsEnabled="False"/>
+        <Button x:Name="btn_canc_abstract" Content="Cancella tag abstract" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="10,210,0,0" IsEnabled="False" Click="btn_canc_abstract_Click"/>
+        <Label Content="Inserire il titolo del libro:" HorizontalAlignment="Left" Margin="118,246,0,0" VerticalAlignment="Top" Width="141" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.139"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txt_libro_modif_gen" HorizontalAlignment="Left" Height="22" Margin="120,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="txt_gen_libro" HorizontalAlignment="Left" Height="23" Margin="314,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Inserire il genere del libro:" HorizontalAlignment="Left" Margin="314,244,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_modif_gen" Content="Modifica genere" HorizontalAlignment="Left" Margin="229,298,0,0" VerticalAlignment="Top" Width="104" IsEnabled="False" Click="btn_modif_gen_Click"/>
 
     </Grid>
 </Window>

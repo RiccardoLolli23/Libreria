@@ -27,15 +27,37 @@ namespace Libreria_lolli_casanova
         public MainWindow()
         {
             InitializeComponent();
-           
-        }
-        private void btn_crea_Click(object sender, RoutedEventArgs e)
-        {
             XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"../../libri.xml", System.Text.Encoding.UTF8), LoadOptions.None);
 
             IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
 
                                         select Biblioteca.Element("codice_scheda").Value;
+
+            btn_cerca_aut.IsEnabled = true;
+            btn_copie_libro.IsEnabled = true;
+            btn_modif_gen.IsEnabled = true;
+            btn_canc_abstract.IsEnabled = true;
+
+        }
+
+        private void btn_cerca_aut_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_copie_libro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_modif_gen_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_canc_abstract_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
