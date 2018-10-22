@@ -50,7 +50,7 @@
         <TextBox x:Name="txt_gen_libro" HorizontalAlignment="Left" Height="23" Margin="314,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
         <Label Content="Inserire il genere del libro:" HorizontalAlignment="Left" Margin="314,244,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_cognome" HorizontalAlignment="Left" Height="23" Margin="120,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" ToolTip="Cognome"/>
-        <!--<Button x:Name="btn_modif_gen" Content="Modifica genere" HorizontalAlignment="Left" Margin="229,298,0,0" VerticalAlignment="Top" Width="104" IsEnabled="False" Click="btn_modif_gen_Click"/>
--->
+        <Button x:Name="btn_modif_gen" Content="Modifica genere" HorizontalAlignment="Left" Margin="229,298,0,0" VerticalAlignment="Top" Width="104" Click="btn_modif_gen_Click"/>
+
     </Grid>
 </Window>
