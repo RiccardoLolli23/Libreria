@@ -27,22 +27,34 @@ namespace Libreria_lolli_casanova
         public MainWindow()
         {
             InitializeComponent();
-            XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"../../libri.xml", System.Text.Encoding.UTF8), LoadOptions.None);
+            
 
-            IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
+            InitializeComponent();
 
-                                        select Biblioteca.Element("codice_scheda").Value;
 
-            btn_cerca_aut.IsEnabled = true;
-            btn_copie_libro.IsEnabled = true;
-            btn_modif_gen.IsEnabled = true;
-            btn_canc_abstract.IsEnabled = true;
+            
+
+           
+
 
         }
+        XDocument xmlDoc = XDocument.Parse(File.ReadAllText(@"../../libri.xml", System.Text.Encoding.UTF8), LoadOptions.None);
+
+
 
         private void btn_cerca_aut_Click(object sender, RoutedEventArgs e)
         {
+            IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
 
+                                        where Biblioteca.Element("autore").Element("nome").Value == txt_nome.Text && Biblioteca.Element("autore").Element("cognome").Value == txt_cognome.Text
+                                        select Biblioteca.Element("titolo").Value;
+
+
+            foreach (string name in libro)
+            {
+
+                lbl_libri_aut.Items.Add(name);
+            }
         }
 
         private void btn_copie_libro_Click(object sender, RoutedEventArgs e)
@@ -50,14 +62,30 @@ namespace Libreria_lolli_casanova
 
         }
 
-        private void btn_modif_gen_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void btn_canc_abstract_Click(object sender, RoutedEventArgs e)
         {
+            xmlDoc.Element("Biblioteca").Element("wiride").Element("abstract").Remove();
+            xmlDoc.Save(@"../../libri.xml");
+        }
 
+        private void btn_cerca_gen_libro_Click(object sender, RoutedEventArgs e)
+        {
+            string gen = txt_genere.Text;
+            //Genere Romanzo
+            IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
+
+                                        where Biblioteca.Element("genere").Value == gen
+                                        select Biblioteca.Element("titolo").Value;
+
+            int count = 0;
+            foreach (string name in libro)
+            {
+                count++;
+
+            }
+            lbl_libri_aut.Items.Add("Il numero di libri di genere: " + gen + " è " + count);
         }
     }
+
+   
 }
