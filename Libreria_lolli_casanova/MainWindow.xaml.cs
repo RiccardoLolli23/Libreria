@@ -77,7 +77,7 @@ namespace Libreria_lolli_casanova
             //Trova genere Romanzo
             IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
 
-                                        where Biblioteca.Element("genere").Value == gen
+                                        where Biblioteca.Element("genere").Value.Contains(gen)
                                         select Biblioteca.Element("titolo").Value;
 
             int count = 0;
@@ -91,15 +91,21 @@ namespace Libreria_lolli_casanova
 
         private void btn_modif_gen_Click(object sender, RoutedEventArgs e)
         {
-            
+
             string titolo = txt_libro_da_cerc.Text;
-            string gen = txt_genere.Text;            
+            string gen = txt_genere.Text;
 
             IEnumerable<XElement> generi = from Biblioteca in xmlDoc.Descendants("wiride")
-                                         where Biblioteca.Element("titolo").Value == titolo
-                                         select Biblioteca.Element("genere");
-
-            generi.OfType<XElement>().First().Value = gen;
+                                           where Biblioteca.Element("titolo").Value == titolo
+                                           select Biblioteca.Element("genere");
+            //Se non ha il genere
+            if (generi.OfType<XElement>() == null)
+            {
+                xmlDoc.Element("Biblioteca").Elements("wiride")
+                    .FirstOrDefault().AddBeforeSelf(new XElement("genere",gen));
+            }
+            else
+                generi.OfType<XElement>().First().Value = gen;
 
             xmlDoc.Save(@"../../libri.xml");
         }
@@ -119,6 +125,7 @@ namespace Libreria_lolli_casanova
                 new XDeclaration("1.0", "utf-8", "yes"),
                 new XComment("Creating an XML Tree using LINQ to XML"),
                 new XElement("Biblioteca"));
+
             int x = 0;
             foreach (string co in codicescheda)
             {
