@@ -36,21 +36,8 @@
         <TextBox x:Name="txt_genere" HorizontalAlignment="Left" Height="23" Margin="346,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
         <Button x:Name="btn_cerca_gen_libro" Content="Cerca libro per genere" HorizontalAlignment="Left" Margin="346,185,0,0" VerticalAlignment="Top" Width="212" Click="btn_cerca_gen_libro_Click"/>
         <Button x:Name="btn_canc_abstract" Content="Cancella tag abstract" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="10,210,0,0" Click="btn_canc_abstract_Click"/>
-        <Label Content="Inserire il titolo del libro:" HorizontalAlignment="Left" Margin="118,246,0,0" VerticalAlignment="Top" Width="141" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.139"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <TextBox x:Name="txt_libro_modif_gen" HorizontalAlignment="Left" Height="22" Margin="120,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
-        <TextBox x:Name="txt_gen_libro" HorizontalAlignment="Left" Height="23" Margin="314,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
-        <Label Content="Inserire il genere del libro:" HorizontalAlignment="Left" Margin="314,244,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_cognome" HorizontalAlignment="Left" Height="23" Margin="120,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" ToolTip="Cognome"/>
-        <Button x:Name="btn_modif_gen" Content="Modifica genere" HorizontalAlignment="Left" Margin="229,298,0,0" VerticalAlignment="Top" Width="104" Click="btn_modif_gen_Click"/>
+        <Button x:Name="btn_modif_gen" Content="Modifica genere" HorizontalAlignment="Left" Margin="346,210,0,0" VerticalAlignment="Top" Width="212" Click="btn_modif_gen_Click"/>
 
     </Grid>
 </Window>

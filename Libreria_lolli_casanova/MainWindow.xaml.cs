@@ -74,7 +74,7 @@ namespace Libreria_lolli_casanova
         private void btn_cerca_gen_libro_Click(object sender, RoutedEventArgs e)
         {
             string gen = txt_genere.Text;
-            //Genere Romanzo
+            //Trova genere Romanzo
             IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
 
                                         where Biblioteca.Element("genere").Value == gen
@@ -91,7 +91,17 @@ namespace Libreria_lolli_casanova
 
         private void btn_modif_gen_Click(object sender, RoutedEventArgs e)
         {
+            
+            string titolo = txt_libro_da_cerc.Text;
+            string gen = txt_genere.Text;            
 
+            IEnumerable<XElement> generi = from Biblioteca in xmlDoc.Descendants("wiride")
+                                         where Biblioteca.Element("titolo").Value == titolo
+                                         select Biblioteca.Element("genere");
+
+            generi.OfType<XElement>().First().Value = gen;
+
+            xmlDoc.Save(@"../../libri.xml");
         }
     }
 
