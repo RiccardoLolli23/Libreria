@@ -34,7 +34,7 @@ namespace Libreria_lolli_casanova
 
         private void btn_cerca_aut_Click(object sender, RoutedEventArgs e)
         {
-            int x = 0;
+            
             IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
 
                                         where Biblioteca.Element("autore").Element("nome").Value == txt_nome.Text && Biblioteca.Element("autore").Element("cognome").Value == txt_cognome.Text
@@ -43,23 +43,25 @@ namespace Libreria_lolli_casanova
 
             foreach (string name in libro)
             {
-                x++
-                
+                lbl_libri_aut.Items.Add(name);
+
             }
-            lbl_libri_aut.Items.Add(x);
+            
         }
 
         private void btn_copie_libro_Click(object sender, RoutedEventArgs e)
         {
+            int x = 0;
+            string titolo = txt_libro_da_cerc.Text;
             IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
 
-                                        where Biblioteca.Element("titolo").Value == txt_libro_da_cerc.Text
+                                        where Biblioteca.Element("titolo").Value == titolo
                                         select Biblioteca.Element("titolo").Value;
             foreach (string name in libro)
             {
-
-                lbl_libri_aut.Items.Add(name);
+                x++;
             }
+            lbl_libri_aut.Items.Add("Sono presenti " + x + " copie/a di " +  titolo);
         }
 
         private void btn_canc_abstract_Click(object sender, RoutedEventArgs e)
