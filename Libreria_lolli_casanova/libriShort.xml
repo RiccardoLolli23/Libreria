@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Creating an XML Tree using LINQ to XML-->
+<Biblioteca>
+  <Libro>
+    <codice_scheda>M-FKB0GR01</codice_scheda>
+    <titolo>Se non ora, quando?</titolo>
+    <cognome>Levi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX02</codice_scheda>
+    <titolo>&lt;Il &gt;balordo</titolo>
+    <cognome>Chiara</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX03</codice_scheda>
+    <titolo>&lt;La &gt;piccola spiaggia</titolo>
+    <cognome>Lauretta</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX04</codice_scheda>
+    <titolo>Celluloide</titolo>
+    <cognome>Pirro</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX05</codice_scheda>
+    <titolo>Sul ponte di Avignone</titolo>
+    <cognome>Pizzuto</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX06</codice_scheda>
+    <titolo>&lt;Il&gt; quinto evangelio</titolo>
+    <cognome>Pomilio</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX07</codice_scheda>
+    <titolo>&lt;Le &gt;luci della peste</titolo>
+    <cognome>Pozza</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX08</codice_scheda>
+    <titolo>Cronache di poveri amanti</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX09</codice_scheda>
+    <titolo>Diario sentimentale</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0A</codice_scheda>
+    <titolo>&lt;La &gt;costanza della ragione</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0B</codice_scheda>
+    <titolo>&lt;Gli &gt;ermellini neri</titolo>
+    <cognome>Prisco</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0C</codice_scheda>
+    <titolo>&lt;Un &gt;eroe del nostro tempo</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0D</codice_scheda>
+    <titolo>&lt;Le &gt;ragazze di Sanfrediano</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0E</codice_scheda>
+    <titolo>&lt;Lo &gt;scialo</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0F</codice_scheda>
+    <titolo>Metello</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0G</codice_scheda>
+    <titolo>&lt;Il &gt;quartiere</titolo>
+    <cognome>Pratolini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0H</codice_scheda>
+    <titolo>Giovinezza giovinezza</titolo>
+    <cognome>Preti</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0I</codice_scheda>
+    <titolo>&lt;Il &gt;colore del cristallo</titolo>
+    <cognome>Prisco</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0J</codice_scheda>
+    <titolo>&lt;Il &gt;padrino</titolo>
+    <cognome>Puzo</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0K</codice_scheda>
+    <titolo>&lt;L' &gt;amore di lupo</titolo>
+    <cognome>Quarantotti Gambini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0L</codice_scheda>
+    <titolo>&lt;Il &gt;cavallo Tripoli</titolo>
+    <cognome>Quarantotti Gambini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0M</codice_scheda>
+    <titolo>&lt;La &gt;corsa di Falco</titolo>
+    <cognome>Quarantotti Gambini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0N</codice_scheda>
+    <titolo>&lt;I &gt;nostri simili</titolo>
+    <cognome>Quarantotti Gambini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0O</codice_scheda>
+    <titolo>&lt;L' &gt;onda dell'incrociatore</titolo>
+    <cognome>Quarantotti Gambini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0P</codice_scheda>
+    <titolo>&lt;Le &gt;redini bianche</titolo>
+    <cognome>Quarantotti Gambini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0Q</codice_scheda>
+    <titolo>&lt;La &gt;rosa rossa</titolo>
+    <cognome>Quarantotti Gambini</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0R</codice_scheda>
+    <titolo>Mai tardi</titolo>
+    <cognome>Revelli</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0S</codice_scheda>
+    <titolo>&lt;I &gt;racconti</titolo>
+    <cognome>Rea</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0T</codice_scheda>
+    <titolo>Quota Albania</titolo>
+    <cognome>Rigoni Stern</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0U</codice_scheda>
+    <titolo>&lt;L�&gt; dove soffia il mistral</titolo>
+    <cognome>Righini Ricci</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0V</codice_scheda>
+    <titolo>Amore di confine</titolo>
+    <cognome>Rigoni Stern</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0W</codice_scheda>
+    <titolo>Arboreto salvatico</titolo>
+    <cognome>Rigoni Stern</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0X</codice_scheda>
+    <titolo>&lt;Il &gt;bosco degli urogalli</titolo>
+    <cognome>Rigoni Stern</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0Y</codice_scheda>
+    <titolo>Uomini, boschi e api</titolo>
+    <cognome>Rigoni Stern</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX0Z</codice_scheda>
+    <titolo>Storia di Tonle</titolo>
+    <cognome>Rigoni Stern</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX10</codice_scheda>
+    <titolo>&lt;Il &gt;sergente nella neve</titolo>
+    <cognome>Rigoni Stern</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX11</codice_scheda>
+    <titolo>&lt;1944 =millenovecentoquarantaquattro&gt;</titolo>
+    <cognome>Ronchey</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX12</codice_scheda>
+    <titolo>Figlioli miei, marxisti immaginari</titolo>
+    <cognome>Ronchey</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX13</codice_scheda>
+    <titolo>&lt;La &gt;ragazza dei passi perduti</titolo>
+    <cognome>Rossi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX14</codice_scheda>
+    <titolo>&lt;La &gt;stanza delle scimmie</titolo>
+    <cognome>Rossi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX15</codice_scheda>
+    <titolo>&lt;Io &gt;speriamo che me la cavo</titolo>
+    <cognome>D'Orta</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX16</codice_scheda>
+    <titolo>&lt;Il &gt;fu Mattia Pascal</titolo>
+    <cognome>Pirandello</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX17</codice_scheda>
+    <titolo>&lt;Il &gt;fu Mattia Pascal</titolo>
+    <cognome>Pirandello</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX18</codice_scheda>
+    <titolo>&lt;Il &gt;fu Mattia Pascal</titolo>
+    <cognome>Pirandello</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX19</codice_scheda>
+    <titolo>Manuale di cold reading</titolo>
+    <cognome>Hyman</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1A</codice_scheda>
+    <titolo>Se questo � un uomo</titolo>
+    <cognome>Levi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1B</codice_scheda>
+    <titolo>Palladion</titolo>
+    <cognome>Manfredi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1C</codice_scheda>
+    <titolo>&lt;La &gt;pavona</titolo>
+    <cognome>Rossi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1D</codice_scheda>
+    <titolo>Melanzio</titolo>
+    <cognome>Rossi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1E</codice_scheda>
+    <titolo>Vestivamo alla marinara</titolo>
+    <cognome>Agnelli</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1F</codice_scheda>
+    <titolo>Vangelo secondo Maria</titolo>
+    <cognome>Alberti</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1G</codice_scheda>
+    <titolo>Calda era la terra</titolo>
+    <cognome>Alessi</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1H</codice_scheda>
+    <titolo>Vent'anni</titolo>
+    <cognome>Alvaro</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1I</codice_scheda>
+    <titolo>Itinerario italiano</titolo>
+    <cognome>Alvaro</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1J</codice_scheda>
+    <titolo>Gente in Aspromonte</titolo>
+    <cognome>Alvaro</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1K</codice_scheda>
+    <titolo>L'et� breve</titolo>
+    <cognome>Alvaro</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1L</codice_scheda>
+    <titolo>&lt;75 =Settantacinque&gt;racconti</titolo>
+    <cognome>Alvaro</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1M</codice_scheda>
+    <titolo>&lt;Il&gt; trucco c'�</titolo>
+    <cognome>Polidoro</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1N</codice_scheda>
+    <titolo>Stavolta m'ammazzo sul serio</titolo>
+    <cognome>Amurri</cognome>
+  </Libro>
+  <Libro>
+    <codice_scheda>M-FKB0GX1O</codice_scheda>
+    <titolo>&lt;L'&gt;inverno dei Mongoli</titolo>
+    <cognome>Angelino</cognome>
+  </Libro>
+</Biblioteca>

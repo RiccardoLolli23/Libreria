@@ -103,6 +103,41 @@ namespace Libreria_lolli_casanova
 
             xmlDoc.Save(@"../../libri.xml");
         }
+
+        private void btn_libriShort_Click(object sender, RoutedEventArgs e)
+        {
+
+            IEnumerable<string> codicescheda = from Biblioteca in xmlDoc.Descendants("wiride")
+                                               select Biblioteca.Element("codice_scheda").Value;
+            IEnumerable<string> titoli = from Biblioteca in xmlDoc.Descendants("wiride")
+                                         select Biblioteca.Element("titolo").Value;
+
+            IEnumerable<string> cognomi = from Biblioteca in xmlDoc.Descendants("wiride")
+                                          select Biblioteca.Element("autore").Element("cognome").Value;
+
+            XDocument xmlDocument = new XDocument(
+                new XDeclaration("1.0", "utf-8", "yes"),
+                new XComment("Creating an XML Tree using LINQ to XML"),
+                new XElement("Biblioteca"));
+            int x = 0;
+            foreach (string co in codicescheda)
+            {
+                xmlDocument.Elements("Biblioteca")
+                       .FirstOrDefault()
+                       .Add(
+                            new XElement("Libro",
+                            new XElement("codice_scheda", co),
+                            new XElement("titolo", titoli.ElementAt(x)),
+                            new XElement("cognome", cognomi.ElementAt(x)))
+                        );
+                x++;
+            }
+
+            xmlDocument.Save(@"../../libriShort.xml");
+
+            btn_libriShort.IsEnabled = false;
+
+        }
     }
 
    
