@@ -12,10 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Linq;
 using System.Xml.Linq;
 using System.IO;
-using System.Collections.Generic;
 
 namespace Libreria_lolli_casanova
 {
@@ -36,7 +34,7 @@ namespace Libreria_lolli_casanova
         {
             
             IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
-
+                                        //Seleziona l'autore in base al nome e al cognome
                                         where Biblioteca.Element("autore").Element("nome").Value == txt_nome.Text && Biblioteca.Element("autore").Element("cognome").Value == txt_cognome.Text
                                         select Biblioteca.Element("titolo").Value;
 
@@ -54,7 +52,7 @@ namespace Libreria_lolli_casanova
             int x = 0;
             string titolo = txt_libro_da_cerc.Text;
             IEnumerable<string> libro = from Biblioteca in xmlDoc.Descendants("wiride")
-
+                                        //Seleziona solo il Titolo in input
                                         where Biblioteca.Element("titolo").Value == titolo
                                         select Biblioteca.Element("titolo").Value;
             foreach (string name in libro)

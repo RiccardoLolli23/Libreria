@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Libreria_lolli_casanova"
         mc:Ignorable="d"
-        Title="Libreria" Height="393.189" Width="594.365" Background="#FFF70707">
+        Title="Libreria" Height="439.447" Width="628.507" Background="#FFF70707">
     <Window.Foreground>
         <ImageBrush/>
     </Window.Foreground>
@@ -19,7 +19,7 @@
         <TextBox x:Name="txt_nome" HorizontalAlignment="Left" Height="23" Margin="10,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" ToolTip="Nome"/>
         <Label Content="Inserire il nome dell'autore da cercare:" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btn_cerca_aut" Content="Cerca autore" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="212" Click="btn_cerca_aut_Click"/>
-        <Label Content="Inserire il titolo di un libro:" HorizontalAlignment="Left" Margin="348,38,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Inserire il titolo di un libro:" HorizontalAlignment="Left" Margin="12,110,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -29,16 +29,16 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="txt_libro_da_cerc" HorizontalAlignment="Left" Height="23" Margin="346,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
-        <Button x:Name="btn_copie_libro" Content="Cerca libro" HorizontalAlignment="Left" Margin="346,92,0,0" VerticalAlignment="Top" Width="212" Click="btn_copie_libro_Click"/>
-        <ListBox x:Name="lbl_libri_aut" HorizontalAlignment="Left" Height="88" Margin="10,102,0,0" VerticalAlignment="Top" Width="212"/>
-        <Label Content="Inserire il genere del libro:" HorizontalAlignment="Left" Margin="346,130,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_genere" HorizontalAlignment="Left" Height="23" Margin="346,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
-        <Button x:Name="btn_cerca_gen_libro" Content="Cerca libro per genere" HorizontalAlignment="Left" Margin="346,185,0,0" VerticalAlignment="Top" Width="212" Click="btn_cerca_gen_libro_Click"/>
-        <Button x:Name="btn_canc_abstract" Content="Cancella tag abstract" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="10,210,0,0" Click="btn_canc_abstract_Click"/>
+        <TextBox x:Name="txt_libro_da_cerc" HorizontalAlignment="Left" Height="23" Margin="10,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" ToolTip="Titolo"/>
+        <Button x:Name="btn_copie_libro" Content="Cerca libro" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="212" Click="btn_copie_libro_Click"/>
+        <ListBox x:Name="lbl_libri_aut" HorizontalAlignment="Left" Height="387" Margin="343,9,0,0" VerticalAlignment="Top" Width="266"/>
+        <Label Content="Inserire il genere del libro:" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_genere" HorizontalAlignment="Left" Height="23" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" ToolTip="Genere"/>
+        <Button x:Name="btn_cerca_gen_libro" Content="Cerca libro per genere" HorizontalAlignment="Left" Margin="10,257,0,0" VerticalAlignment="Top" Width="212" Click="btn_cerca_gen_libro_Click"/>
+        <Button x:Name="btn_canc_abstract" Content="Cancella tag abstract" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Margin="10,307,0,0" Click="btn_canc_abstract_Click"/>
         <TextBox x:Name="txt_cognome" HorizontalAlignment="Left" Height="23" Margin="120,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" ToolTip="Cognome"/>
-        <Button x:Name="btn_modif_gen" Content="Modifica genere" HorizontalAlignment="Left" Margin="120,305,0,0" VerticalAlignment="Top" Width="104" Click="btn_modif_gen_Click"/>
-        <Button x:Name="btn_libriShort" Content="Crea libriShort.xml" HorizontalAlignment="Left" Margin="415,262,0,0" VerticalAlignment="Top" Width="124" Height="37" Click="btn_libriShort_Click"/>
+        <Button x:Name="btn_modif_gen" Content="Modifica genere" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top" Width="212" Click="btn_modif_gen_Click"/>
+        <Button x:Name="btn_libriShort" Content="Crea libriShort.xml" HorizontalAlignment="Left" Margin="10,353,0,0" VerticalAlignment="Top" Width="212" Height="43" Click="btn_libriShort_Click"/>
 
     </Grid>
 </Window>
