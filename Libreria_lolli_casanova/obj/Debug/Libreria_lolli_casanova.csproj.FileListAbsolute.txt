@@ -58,3 +58,18 @@ C:\Users\lorenzo.casanova\source\repos\Libreria2\Libreria_lolli_casanova\obj\Deb
 C:\Users\lorenzo.casanova\source\repos\Libreria2\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.csproj.CoreCompileInputs.cache
 C:\Users\lorenzo.casanova\source\repos\Libreria2\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.exe
 C:\Users\lorenzo.casanova\source\repos\Libreria2\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.pdb
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\bin\Debug\Libreria_lolli_casanova.exe.config
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\bin\Debug\Libreria_lolli_casanova.exe
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\bin\Debug\Libreria_lolli_casanova.pdb
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.csprojAssemblyReference.cache
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\MainWindow.g.cs
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\App.g.cs
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova_MarkupCompile.cache
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova_MarkupCompile.lref
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\MainWindow.baml
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.g.resources
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.Properties.Resources.resources
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.csproj.GenerateResource.cache
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.csproj.CoreCompileInputs.cache
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.exe
+C:\Users\riccardo.lolli\Documents\Nuova cartella\Libreria\Libreria_lolli_casanova\obj\Debug\Libreria_lolli_casanova.pdb
